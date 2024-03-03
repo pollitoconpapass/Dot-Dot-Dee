@@ -19,12 +19,12 @@
 
  2. Type in the file where you are trying to do the importation: 
  
-        from DotDotDee import Danielley
+        from DotDotDee import DotDotDee
 
 
  3. Continue typing: 
  
-        Danielley.DDD("Random-garbage")
+        DotDotDee.Danielley.DDD("Random-garbage")
 
     expl: Random-garbage is the name of your VS Code project. (The folder you opened)
 
