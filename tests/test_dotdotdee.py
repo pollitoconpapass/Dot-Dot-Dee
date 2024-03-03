@@ -1,23 +1,19 @@
 import unittest
-from DotDotDeee import DotDotDee
+from DotDotDee.DotDotDee import Danielley
 
+class TestDDD(unittest.TestCase):
+    def test_ddd_folder_not_found(self):
+        current_dir = '/home/user/otherproject' 
+        folder_name = 'myproject'
+        expected = "From Dot-Dot-Dee: We couldn't find iDDD"
+        try:
+            Danielley.DDD(folder_name)
+        except Exception as e:
+            self.assertEqual(expected, str(e))
 
-class TestDotDotDee2(unittest.TestCase):
-    def test_ddd_valid_path(self):
-        dotdotdee = DotDotDee()
-        result = dotdotdee.DDD("folder_name")
-        self.assertEqual(result, None)
-
-
-    def test_ddd_invalid_path(self):
-        dotdotdee = DotDotDee()
-        result = dotDotDotDeeD("invalid_folder")
-        self.assertEqual(result, None)
-        self.assertRaises(Exception, dotdotdee.DDD, "invalid_folder")
-
-
-    def test_ddd_no_folder(self):
-        dotdotdee = DotDotDee()
-        result = dotdotdee.DDD(None)
-        self.assertEDotDotDeelt, None)
-        self.assertRaises(TypeError, dotdotdee.DDD, None)
+    def test_ddd_windows_path(self):
+        current_dir = 'C:\\Users\\user\\projects\\myproject'
+        folder_name = 'myproject'
+        expected = 'C:\\Users\\user'
+        result = Danielley.DDD(folder_name)
+        self.assertEqual(expected, result)

@@ -13,18 +13,18 @@
 
 
 ### Steps guide:
- 1. Install Dot-Dot-Dee:  ```pip install DotDotDeee==1.1.0```. (I know it has an extra 'e'... I have dislexia)
+ 1. Install Dot-Dot-Dee:  ```pip install Dot-Dot-Dee==1.0.0```
  
 
 
  2. Type in the file where you are trying to do the importation: 
  
-        from DotDotDeee import DotDotDee
+        from DotDotDee import Danielley
 
 
  3. Continue typing: 
  
-        DotDotDee.Danielley.DDD("Random-garbage")
+        Danielley.DDD("Random-garbage")
 
     expl: Random-garbage is the name of your VS Code project. (The folder you opened)
 
